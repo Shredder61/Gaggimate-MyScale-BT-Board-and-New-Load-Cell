@@ -22,15 +22,6 @@ Note that this change requires the following:
 8. Clean, Build
 9. Connect the Lily display, select the correct COM port, and upload the firmware
 
-You can add a serial monitor output so that you can test the implementation by amending the code to the following (out is original weight, correction factor, new weight):
-
-void myscale::parseStatusUpdate(const uint8_t* data, size_t length) {
-    int32_t raw = parseWeight(data);
-    float baseWeight = static_cast<float>(raw) / 1000.0f;
-    float finalWeight = baseWeight * correctionFactor;
-
+You can add a serial monitor output so that you can test the implementation by amending the code to the following (output is original weight, correction factor, new weight):
     Serial.printf("RAW: %ld  BASE: %.3f  FACTOR: %.3f  FINAL: %.3f\n",
                   raw, baseWeight, correctionFactor, finalWeight);
-
-    setWeight(finalWeight);
-}
