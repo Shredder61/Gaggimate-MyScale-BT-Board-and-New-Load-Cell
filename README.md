@@ -1,14 +1,14 @@
 # Gaggimate-MyScale-BT-Board-and-New-Load-Cell
-Provides a correction factor in the display code (myscale.h, myscale.cpp) to calibrate a new load cell
-The original code is intended for a manufacturer-calibrated scale which has a hard-coded calibration in its firmware
-This revision allows for a custom correction factor to be applied to the weight before it is broadcast to the display
-Only the display code is changed, not the controller - The code changes are identified by "//Correction factor added here" - obviously, you will need to figure out your own correction factor for your scale
+Provides a correction factor in the display code (myscale.h, myscale.cpp) to calibrate a new load cell.
+The original code is intended for a manufacturer-calibrated scale which has a hard-coded calibration in its firmware.
+This revision allows for a custom correction factor to be applied to the weight before it is broadcast to the display.
+Only the display code is changed, not the controller - The code changes are identified by "//Correction factor added here" - obviously, you will need to figure out your own correction factor for your scale.
 
-Note that these changes will be overwritten if you subsequently update the display firmware via the App UI so you would need to re-do the process below
+Note that these changes will be overwritten if you subsequently update the display firmware via the App UI so you would need to re-do the process below.
 
-You will need to download the latest version of Gaggimate and the Bluetooth scales library
+You will need to download the latest version of Gaggimate and the Bluetooth scales library.
 
-You will need to use Visual Studio (free) and the platformio IDE plug-in (free)
+You will need to use Visual Studio (free) and the platformio IDE plug-in (free).
 
 Note that this change requires the following:
 
