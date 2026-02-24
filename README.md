@@ -14,8 +14,8 @@ Note that this change requires the following:
 
 1. Download a copy of the latest Gaggimate repository; https://github.com/jniebuhr/gaggimate to your PC
 2. Add this as a new project in Visual Studio
-3. Open the platformio.ini file in Visual Studio, remove the call to download https://github.com/<username>/esp-arduino-ble-scales.git otherwise the new build will create a second bluetooth scale library without any of the myscale changes
-4. Download the Bluetooth scales (esp-arduino-ble-scales folder) library for ESP on Arduino Framework (https://github.com/<username>/esp-arduino-ble-scales.git) and save it alongside (not inside) the Gaggimate repository on your PC
+3. Open the platformio.ini file in Visual Studio, remove the call to download [https://github.com/<username>/esp-arduino-ble-scales.git](https://github.com/gaggimate/esp-arduino-ble-scales) otherwise the new build will create a second bluetooth scale library without any of the myscale changes
+4. Download the Bluetooth scales (esp-arduino-ble-scales folder) library for ESP on Arduino Framework [(https://github.com/<username>/esp-arduino-ble-scales.git)](https://github.com/gaggimate/esp-arduino-ble-scales) and save it alongside (not inside) the Gaggimate repository on your PC
 5. Replace the myscale.h and myscale.cpp files in this folder with the edited (correction factor) files from this Github
 6. Add the entire contents of this revised esp-arduino-ble-scales folder into the /lib folder in your local copy of the Gaggimate repository
 7. In Visual Studio, ensure that only the display environment is selected for clean/build/upload - this is all you need
