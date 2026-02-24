@@ -19,7 +19,7 @@ private:
     NimBLERemoteCharacteristic* writeCharacteristic = nullptr;
     uint32_t lastHeartbeat = 0;
     bool markedForReconnection = false;
-    float correctionFactor = 0.60f;//correction factor for myscale board and another load cell (weigh sensor)
+    float correctionFactor = 0.60f;//correction factor for myscale board and another load cell (weight sensor)
 
     void notifyCallback(NimBLERemoteCharacteristic* characteristic, uint8_t* data, size_t length, bool isNotify);
     bool performConnectionHandshake();
